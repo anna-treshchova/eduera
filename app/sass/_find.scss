@@ -1,0 +1,116 @@
+.find {
+    margin-top: 35px;
+    font-size: 0;
+    position: relative;
+    background: url("../img/stars_find.svg") no-repeat left 46.8% top 29px;
+    &__content {
+        padding-top: 76px;
+        max-width: 620px;
+        h1 {
+            margin-bottom: 42px;
+            span {
+                position: relative;
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 62px;
+                    height: 62px;
+                    background: url("../img/moon.svg") no-repeat;
+                    position: absolute;
+                    right: -59px;
+                    bottom: 9px;
+                }
+            }
+        }
+        p {
+            color: #D0D3DB;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 32px;
+            padding-bottom: 58px;
+        }
+        .btn_yell {
+            margin: 0 26px 64px 0;
+        }
+    }
+    &__numbers {
+        position: relative;
+        width: 552px;
+        height: 244px;
+        margin-bottom: 118px;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url("../img/wave.svg") no-repeat;
+        }
+        &-item {
+            margin-top: 71px;
+        }
+        &-number {
+            color: #D9ECFF;
+            font-family: "Red Rose", serif;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 54px;
+            padding-bottom: 16px;
+
+        }
+        &-title {
+            color: #D9ECFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+        }
+    }
+    img {
+        position: relative;
+        left: 13%;
+        z-index: 2;
+    }
+    &__link {
+        position: absolute;
+        left: 44.2%;
+        top: 14.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 107px;
+        height: 107px;
+        border-radius: 50%;
+        border: 2px solid #43328D;
+        background: #F2C94C url("../img/play.svg") no-repeat center;
+
+        &::after {
+            content: "";
+            background: url("../img/spin-text.svg") no-repeat;
+            width: 69px;
+            height: 67px;
+            animation: spin 10s linear infinite;
+        }
+    }
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width: 1400px) {
+.find__content {
+    max-width: 500px;
+}
+}
+
+
+
+

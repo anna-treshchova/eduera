@@ -1,0 +1,29 @@
+@use "variables" as *;
+
+.text {
+    color: #FFF;
+    font-family: "Red Rose", serif;
+    font-weight: 700;
+    &_lg {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    &_xl{
+        font-size: 70px;
+        line-height: 80px;
+        letter-spacing: -1.4px;
+    }
+    span {
+        color: #FFD054;
+    }
+}
+
+
+@media (min-width:768px) {
+    .text{
+        &_lg{
+        }
+        &_xl{
+        }
+    }
+}

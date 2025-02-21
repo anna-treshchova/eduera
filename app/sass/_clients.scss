@@ -1,0 +1,19 @@
+.clients {
+    width: 100vw;
+    height: 207px;
+    background-color: #2C30B8;
+    position: relative;
+    margin-top: -58px;
+    margin-bottom: 154px;
+    &::after {
+        content: "";
+        height: 207px;
+        background-color: #F2C94C;
+        transform: rotate(-3.731deg);
+        position: absolute;
+        z-index: -1;
+        top: 3px;
+        left: -10vw;
+        right: -10vw;
+    }
+}

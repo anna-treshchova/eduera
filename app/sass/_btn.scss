@@ -1,0 +1,95 @@
+.btn {
+    display: inline-flex;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+    color: inherit;
+    will-change: background-color, border, color;
+    transition: background-color .3s ease-in-out,
+                border .3s ease-in-out,
+                color .3s ease-in-out;
+    &_xl {
+        padding: 16px 61px;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        &:hover{
+            background-color: #FFD054;
+            color: #000;
+            border: 2px solid #FFD054;
+        }
+    }
+    &_lg {
+        padding: 22px 34px;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+    &_md {
+        padding: 14px 35px;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        &:hover {
+            background-color: #FFD054;
+            color: #000;
+            border: 2px solid #FFD054;
+        }
+    }
+    &_sm{
+        padding: 22px 26px;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+    }
+    &_xs {
+        padding: 7px 24px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        &:hover{
+            border: 2px solid #FFD054;
+        }
+    }
+    &_xxs {
+        padding: 0;
+        border-radius: 0;
+    }
+    &_trans-br {
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.40);
+    }
+    &_trans {
+        color: #D9ECFF;
+        &:hover {
+            color: #FFD054;
+        }
+    }
+    &_yell {
+        background-color: #FFD054;
+        color: #000;
+        border: 2px solid #FFD054;
+        &:hover,
+        &.active {
+            background-color: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.40);
+            color: #fff;
+        }
+    }
+}
+
+.btn_lg.btn_trans-br {
+    padding: 22px 43px;
+    &:hover,
+    &.active {
+        background-color: #FFD054;
+        color: #000;
+        border: 2px solid #FFD054;
+    }
+}
+
+
+

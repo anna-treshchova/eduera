@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+.menu {
+    &__list {
+        padding-left: 0;
+        a {
+            //display: block;
+            font-family: "DM Sans", sans-serif;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 24px;
+            color: inherit;
+            margin: 0 22px;
+            padding: 0 8px 7px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom .3s;
+            &:hover {
+                border-bottom: 2px solid #FFD054;
+            }
+        }
+    }
+}
+
